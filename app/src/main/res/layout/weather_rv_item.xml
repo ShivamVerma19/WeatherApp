@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    android:background="@android:color/transparent"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@drawable/card_back"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id = "@+id/rvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding = "4dp"
+            android:text = "12:00"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize = "16sp"/>
+
+
+        <TextView
+            android:id = "@+id/rvTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding = "4dp"
+            android:text = "37.C"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize = "22sp"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:id = "@+id/rvWeatherCondition"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding = "4dp"
+            android:src = "@mipmap/ic_launcher"/>
+
+
+        <TextView
+            android:id = "@+id/rvWindSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding = "4dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text = "22km/hr"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
